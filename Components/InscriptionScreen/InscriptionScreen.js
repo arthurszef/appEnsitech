@@ -30,7 +30,7 @@ export default function InscriptionScreen ({navigation}) {
         <View style={styles.innerBox}>
           <TextInput
             style={styles.champ}
-            placeholder="Password"
+            placeholder="mdp"
             placeholderTextColor="rgba(108,116,125,255)"
             secureTextEntry={true}
           />
