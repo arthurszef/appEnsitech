@@ -1,13 +1,13 @@
 import React from 'react';
-import { Text, View, StatusBar, StyleSheet, TouchableOpacity } from 'react-native';
+import { Text, View, StyleSheet} from 'react-native';
 
-export default function HomeScreen ({navigation}) {
+export default function CompteurScreen ({navigation}) {
     
   return (
     <View style={styles.container}>
-      <StatusBar backgroundColor="rgba(23,27,30,255)" />
-      <Text style={styles.title}>Bienvenue</Text>
+      <Text style={styles.title}>Profile</Text>
       <View style={styles.box}>
+        
       </View>
     </View>
   )
@@ -30,18 +30,10 @@ const styles = StyleSheet.create({
     color : 'rgba(81,111,190,255)',
     marginTop : 20,
   },
-  title2: {
-    fontSize: 18,
-    fontWeight: 'bold',
-    marginBottom: 10,
-    alignSelf: 'flex-start',
-    marginLeft: 20,
-    marginTop : 10,
-    color : 'white',
-  },
   box: {
+    // flex : 1,
     width: '95%',
-    height: '85%',
+    height: '25%',
     borderRadius: 20,
     marginBottom: 20,
     backgroundColor: 'rgba(28,32,35,255)',
@@ -52,23 +44,9 @@ const styles = StyleSheet.create({
     },
     shadowOpacity: 0.25,
     shadowRadius: 3.84,
-
     elevation: 5,
+    alignItems: 'stretch',
+    justifyContent: 'flex-start',
     flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'space-around',
-  },
-  innerBox: {
-    flex: 1,
-    height: '85%',
-    backgroundColor: 'redrgba(38,43,47,255)',
-    marginHorizontal: 15,
-    borderRadius: 10,
-  },
-  paragraphe: {
-    color: 'rgba(108,116,125,255)',
-    marginLeft : 10,
-    marginRight : 6
-
   },
 });

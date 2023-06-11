@@ -12,19 +12,17 @@ export default function ConnexionScreen ({navigation}) {
           <TextInput
             style={styles.champ}
             placeholder="Email"
+            placeholderTextColor="rgba(108,116,125,255)"
             keyboardType="email-address"
-            // value={email}
-            // onChangeText={setEmail}
           />
         </View>
         <Text style={styles.title2}>MDP</Text>
         <View style={styles.innerBox}>
           <TextInput
             style={styles.champ}
-            placeholder="Password"
+            placeholder="mdp"
+            placeholderTextColor="rgba(108,116,125,255)"
             secureTextEntry={true}
-            // value={password}
-            // onChangeText={setPassword}
           />
         </View>
         <TouchableOpacity style={styles.button}>

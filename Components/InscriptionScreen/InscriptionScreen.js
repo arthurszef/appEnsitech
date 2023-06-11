@@ -13,9 +13,17 @@ export default function InscriptionScreen ({navigation}) {
           <TextInput
             style={styles.champ}
             placeholder="Email"
+            placeholderTextColor="rgba(108,116,125,255)"
             keyboardType="email-address"
-            // value={email}
-            // onChangeText={setEmail}
+          />
+        </View>
+        <Text style={styles.title2}>MDP</Text>
+        <View style={styles.innerBox}>
+          <TextInput
+            style={styles.champ}
+            placeholder="mdp"
+            placeholderTextColor="rgba(108,116,125,255)"
+            secureTextEntry={true}
           />
         </View>
         <Text style={styles.title2}>MDP</Text>
@@ -23,22 +31,11 @@ export default function InscriptionScreen ({navigation}) {
           <TextInput
             style={styles.champ}
             placeholder="Password"
+            placeholderTextColor="rgba(108,116,125,255)"
             secureTextEntry={true}
-            // value={password}
-            // onChangeText={setPassword}
           />
         </View>
-        <Text style={styles.title2}>MDP</Text>
-        <View style={styles.innerBox}>
-          <TextInput
-            style={styles.champ}
-            placeholder="Password"
-            secureTextEntry={true}
-            // value={password}
-            // onChangeText={setPassword}
-          />
-        </View>
-        <TouchableOpacity style={styles.button}>
+        <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('Connexion')}>
           <Text style={styles.buttonText}>S'inscrire</Text>
         </TouchableOpacity>
       </View>
